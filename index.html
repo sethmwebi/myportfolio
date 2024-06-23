@@ -5,8 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>My Personal Website</title>
     <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <nav>
+      <div class="logo"><span>Sethoz</span><span class="dot"></span></div>
+      <ul class="nav-links">
+        <li>Home</li>
+        <li>Projects</li>
+        <li>About</li>
+      </ul>
+      <div class="contact"><i class="fa-regular fa-comment"></i></div>
+    </nav>
+
+    <!-- hero section -->
+    <header>
+      <div class="hero">
+        <div class="intro">
+          <p>Hey, I'm Seth</p>
+          <div>
+            <h1 class="language">Typescript</h1>
+            <h1>Developer</h1>
+            <p>
+              I'm a frontend developer based in Nairobi, Kenya. I turn your
+              ideas into websites
+            </p>
+            <div class="hero-buttons">
+              <button>Contact Me</button><button>My Projects</button>
+            </div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <img src="./images/profile.png" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <!-- projects -->
+    <section class="container">
+      <h1>Projects<span class="dot"></span></h1>
+      <div id="projects">
+        <div>
+          <img src="images/projects/ekoe.png" alt="ekoe brand" />
+        </div>
+        <div>
+          <img src="images/projects/funzo.png" alt="funzo programme" />
+        </div>
+        <div>
+          <img src="images/projects/lulu.png" alt="ecommerce website" />
+        </div>
+        <div>
+          <img
+            src="images/projects/dm-pictures.png"
+            alt="photography website"
+          />
+        </div>
+      </div>
+    </section>
   </body>
 </html>

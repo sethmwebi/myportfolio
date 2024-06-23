@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: #fafafa;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  height: 48px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.logo {
+  display: flex;
+  align-items: baseline;
+}
+
+.logo span {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+span.dot {
+  width: 5px;
+  height: 5px;
+  background: #ff6ec7;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+ul.nav-links li {
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contact {
+  height: 30px;
+  width: 30px;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact i {
+  color: #fafafa;
+}
+
+.hero {
+  height: calc(100vh-48px);
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.hero .intro {
+  width: 100%;
+}
+
+.hero .intro p:first-of-type {
+  margin-bottom: 10px;
+}
+
+.hero .intro div p {
+  margin-top: 10px;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.hero .language {
+  color: #ff6ec7;
+}
+
+.hero .hero-buttons button {
+  border-radius: 2px;
+  border: 0;
+  padding: 12px 0;
+  width: 150px;
+  cursor: pointer;
+}
+
+.hero .hero-buttons button:first-of-type {
+  margin-right: 10px;
+  background-color: #ff6ec7;
+  color: whitesmoke;
+  font-size: 16px;
+}
+
+.hero .hero-buttons button:last-of-type {
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid #ff6ec7;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.container {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#projects img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
