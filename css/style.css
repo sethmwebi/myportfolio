@@ -84,6 +84,11 @@ header {
   margin: 2rem auto;
 }
 
+.menu {
+  font-size: 24px;
+  cursor: pointer;
+}
+
 .hero {
   display: flex;
   align-items: center;
@@ -273,4 +278,82 @@ header {
   cursor: pointer;
   font-size: 20px;
   background-color: #ff6ec7;
+}
+
+@media (max-width: 768px) {
+  nav,
+  header,
+  .container,
+  .skills-container,
+  .about-container,
+  .contact-container {
+    width: 96%;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .nav-links li:nth-child(1),
+  .nav-links li:nth-child(3) {
+    display: none;
+  }
+
+  ul.nav-links li {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  header {
+    min-height: calc(100vh - 48px);
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+  .hero img {
+    width: 200px;
+  }
+
+  #projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #projects img {
+    max-width: 92%;
+  }
+
+  #skills {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #contact {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #contact div:first-of-type {
+    width: 100%;
+  }
+
+  #contact .contact-form {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
