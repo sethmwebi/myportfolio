@@ -6,10 +6,18 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   background: #fafafa;
   font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
 }
 
 nav {
@@ -25,6 +33,11 @@ nav {
   display: flex;
   gap: 2rem;
   list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
 }
 
 .logo {
@@ -66,7 +79,7 @@ ul.nav-links li {
 }
 
 header {
-  height: calc(100vh-48px);
+  height: calc(100vh - 48px);
   width: 80%;
   margin: 2rem auto;
 }
@@ -75,6 +88,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  height: 100%;
 }
 
 .hero .intro {
@@ -89,6 +103,13 @@ header {
   margin-top: 10px;
 }
 
+.hero img {
+  width: 500px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 0.6px solid #ff6ec7;
+  border-radius: 50%;
+}
 .hero h1 {
   font-size: 36px;
 }
@@ -146,4 +167,110 @@ header {
   color: black;
   display: block;
   margin-bottom: 5px;
+}
+
+.skills-container {
+  margin: 2rem auto;
+  width: 80%;
+}
+
+.skills-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#skills {
+  display: flex;
+  justify-content: space-between;
+}
+
+#skills h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#skills p {
+  margin-bottom: 4px;
+}
+
+.about-container {
+  margin: 2rem auto;
+  width: 80%;
+}
+
+.about-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-container #about p {
+  line-height: 1.7;
+}
+
+.contact-container {
+  margin: 2rem auto;
+  width: 80%;
+}
+
+.contact-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact-container .reach-me {
+  font-size: 24px;
+}
+
+#contact .phone-email .fa-solid {
+  border: 1px solid black;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+#contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact div:first-of-type {
+  width: 50%;
+}
+
+#contact .contact-form {
+  width: 50%;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.contact-form form .name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  background-color: transparent;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ff6ec7;
+}
+
+.contact-form button {
+  border: 1px solid #ff6ec7;
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #ff6ec7;
 }

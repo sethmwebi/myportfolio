@@ -17,15 +17,19 @@
     <nav>
       <div class="logo"><span>Sethoz</span><span class="dot"></span></div>
       <ul class="nav-links">
-        <li>Home</li>
-        <li>Projects</li>
-        <li>About</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <div class="contact"><i class="fa-regular fa-comment"></i></div>
+      <div class="contact">
+        <a href="#contact"><i class="fa-regular fa-comment"></i></a>
+      </div>
     </nav>
 
     <!-- hero section -->
-    <header>
+    <header id="#home">
       <div class="hero">
         <div class="intro">
           <p>Hey, I'm Seth</p>
@@ -99,5 +103,81 @@
         </div>
       </div>
     </section>
+
+    <!--     skills overview -->
+    <section class="skills-container">
+      <h1>Skills<span class="dot"></span></h1>
+      <div id="skills">
+        <div id="frontend">
+          <h4>Frontend</h4>
+          <p><i class="fa-regular fa-circle-check"></i>&nbsp;JavaScript</p>
+          <p><i class="fa-regular fa-circle-check"></i>&nbsp;ReactJS</p>
+          <p><i class="fa-regular fa-circle-check"></i>&nbsp;NextJS</p>
+          <p><i class="fa-regular fa-circle-check"></i>&nbsp;Typescript</p>
+        </div>
+        <div id="backend">
+          <h4>Backend</h4>
+          <p><i class="fa-regular fa-circle-check"></i>&nbsp;NodeJS</p>
+          <p><i class="fa-regular fa-circle-check"></i>&nbsp;Express</p>
+          <p><i class="fa-regular fa-circle-check"></i>&nbsp;Prisma</p>
+          <p><i class="fa-regular fa-circle-check"></i>&nbsp;Postgresql</p>
+        </div>
+        <div id="soft-skills">
+          <h4>Soft Skills</h4>
+          <p><i class="fa-regular fa-circle-check"></i>&nbsp;Teamwork</p>
+          <p><i class="fa-regular fa-circle-check"></i>&nbsp;Adaptability</p>
+          <p><i class="fa-regular fa-circle-check"></i>&nbsp;Problem-solving</p>
+          <p><i class="fa-regular fa-circle-check"></i>&nbsp;Creativity</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-container">
+      <h1>About<span class="dot"></span></h1>
+      <div id="about">
+        <p>
+          I'm a JavaScript programmer who loves working with React, HTML, and
+          Next.js. I started coding four years ago while I was on campus, even
+          though I was studying Economics and Statistics.
+        </p>
+        <p>
+          Coding quickly became a passion, and now I enjoy creating fun and
+          dynamic web applications. I love solving problems and making things
+          work smoothly.
+        </p>
+        <p>
+          When I'm not coding, you might find me listening to the Joe Rogan
+          Experience Podcast or watching youtube videos on Chelsea Football Club
+        </p>
+      </div>
+    </section>
+
+    <div class="contact-container">
+      <h1>Contact<span class="dot"></span></h1>
+      <div id="contact">
+        <div>
+          <p class="reach-me">
+            Reach me through this form and I'll get back to you in the next 48
+            hours
+          </p>
+          <div class="phone-email">
+            <p>
+              <i class="fa-solid fa-envelope"></i>&nbsp;sethmwebi27@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>&nbsp;+254-796-547-997</p>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form action="">
+            <input type="text" name="firstname" placeholder="firstname" />
+            <input type="text" name="lastname" placeholder="lastname" />
+            <input type="email" name="email" placeholder="email address" />
+            <textarea rows="5" placeholder="Enter you message"></textarea>
+            <button type="submit">send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="./index.js"></script> -->
   </body>
 </html>
